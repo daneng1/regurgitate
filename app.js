@@ -10,7 +10,7 @@ formEl.addEventListener('click', function (event) {
   const firstWord = ['butt cheese', 'fart', 'pee', 'vomit', 'snotty', 'the runs', 'diharrea', 'sbd', 'booger', 'potty', 'shart', 'dung', 'crap', 'excrement', 'feces', 'bodily fluid', 'deuce', 'number two', 'tinkle', 'wizz', 'peepee', 'snot', 'phlegm', 'bile', 'sweaty', 'spit', 'puke', 'chunks', 'barf', 'poo poo'];
 
   var randomFirst = firstWord[Math.floor(Math.random() * 30)];
-  console.log(randomFirst);
+
 
   const secondWord = ['sandwich', 'burrito', 'burger', 'omlette', 'pie', 'potpie', 'casserole', 'meat loaf', 'stew', 'steaks', 'soup', 'bake', 'fries', 'salad', 'cereal', 'taco', 'margarita', 'chips', 'sauce', 'pasta', 'oatmeal', 'dip', 'milk', 'coffee', 'juice', 'smoothie', 'pizza', ' and guac', 'cookie', 'brownie', 'cake'];
 
@@ -20,6 +20,7 @@ formEl.addEventListener('click', function (event) {
 
   var randomColor = elementColors[Math.floor(Math.random() * 10)];
   console.log(randomColor);
+  console.log(randomFirst);
   console.log(randomSecond);
 
   
@@ -27,6 +28,7 @@ formEl.addEventListener('click', function (event) {
   // newHeader.innerHTML = '';
   document.getElementById('comboWord').style.color = randomColor;
   newWord.innerHTML = (`${randomFirst} ${randomSecond}`).toUpperCase();
+  
   console.log(newWord);
   return newWord;
 });
